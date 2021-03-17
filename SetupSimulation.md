@@ -65,8 +65,8 @@ If everything went well, it should open the Isaac UI.
 * Download the Unity Hub image from [here.](https://unity3d.com/get-unity/download)
 * Give permissions and download Unity 2019.3.6f1 
   ```
-    chmod +x UnityHub.AppImage
-    ./UnityHub.AppImage unityhub://2019.3.6f1/5c3fb0a11183
+  chmod +x UnityHub.AppImage
+  ./UnityHub.AppImage unityhub://2019.3.6f1/5c3fb0a11183
   ```
  
 ### 8. Starting the Simulation
@@ -74,13 +74,13 @@ If everything went well, it should open the Isaac UI.
 * Copy the unity simulation folder to any adequate directory.
 * In a terminal, open Unity if it isn't already
   ```
-    ./UnityHub.AppImage
+  ./UnityHub.AppImage
   ```
 * In Unity, Open the project found in the isaac sim folder/projects/sample
 * To run ideal_app, do the following in another terminal:
   ```
-    cd ~/ideal_app_sim-pkg/
-    ./apps/ideal_app/ideal_app_sim/ideal_app_sim
+  cd ~/ideal_app_sim-pkg/
+  ./apps/ideal_app/ideal_app_sim/ideal_app_sim
   ```
 * If the Factory01 scene is not selected, you can double click it on the lower panel folder by going into Assets/Robotics-Simulation/Scenes
 * On the left pane, select the ScenarioLauncher gameobject.
