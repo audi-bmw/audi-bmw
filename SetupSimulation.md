@@ -54,7 +54,7 @@ Save it to a fixed directory.
 ### 7. Test Bazel
 Alles gut? Let's check it out!
 
-  ```cd isaac/
+  ```cd isaac/sdk/
   bazel build //apps/samples/stereo_dummy
   bazel run //apps/samples/stereo_dummy
   ```
