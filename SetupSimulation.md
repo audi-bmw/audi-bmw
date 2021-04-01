@@ -28,7 +28,7 @@ sudo reboot
 * Reboot the system enter bios -> security and disable secure boot 
 * Open 'software & update' on your PC
 * Go to additional drivers
-* Select nvidia 455
+* Select nvidia 455 (or newer)
 * Click apply
 * Reboot
 
@@ -54,7 +54,8 @@ Save it to a fixed directory.
 ### 7. Test Bazel
 Alles gut? Let's check it out!
 
-  ```cd isaac/sdk/
+  ```bash
+  cd isaac/sdk/
   bazel build //apps/samples/stereo_dummy
   bazel run //apps/samples/stereo_dummy
   ```
