@@ -55,7 +55,7 @@ Save it to a fixed directory.
 Alles gut? Let's check it out!
 
   ```bash
-  cd isaac/sdk/
+  cd /isaac/sdk/
   bazel build //apps/samples/stereo_dummy
   bazel run //apps/samples/stereo_dummy
   ```
