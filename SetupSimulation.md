@@ -62,15 +62,25 @@ Alles gut? Let's check it out!
 Head over to your web browser and navigate to [http://localhost:3000](http://localhost:3000)
 If everything went well, it should open the Isaac UI.
 
-### 9. Installing Unity3D
+### 8. Installing Unity3D
 * Download the Unity Hub image from [here.](https://unity3d.com/get-unity/download)
 * Give permissions and download Unity 2019.3.6f1 
   ```
   chmod +x UnityHub.AppImage
   ./UnityHub.AppImage unityhub://2019.3.6f1/5c3fb0a11183
   ```
- 
-### 8. Starting the Simulation
+### 9. Fixing Communications Protocol
+* Edit the python code in '/isaac/sdk/packages/pyalice/CapnpMessages.py': 
+    1. at line 15
+        ```
+        PATH = "/**/*.capnp"       # the path to find all ".capnp" files
+        ```
+    2. at line 27 **AND** line 45 (subject to change depending to your isaac version)
+        ```
+        capnp_files = glob.glob(os.getcwd() + PATH, recursive=True)
+        ```
+
+### 10. Starting the Simulation
 * Copy the ideal_app and ideal_app_sim-pkg folders to your home directory.
 * Copy the unity simulation folder to any adequate directory.
 * In a terminal, open Unity if it isn't already
